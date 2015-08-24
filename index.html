@@ -1,9 +1,10 @@
-<html>
+<html ng-app>
 <head>
 	<title>JRNYZ</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 </head>
 
 <body>
@@ -11,6 +12,32 @@
 		<h1>JRYNZ</h1>
 		<h2>Lets measure your commute</h2>
 	</div>
+	<section class="car">
+		<div class="container">
+			<div class="dashboard" ng-model="carValues">
+				<ul>
+					<li class="col-md-4">
+						<h3>Distance</h3>
+						<div class="values" id="distance-val">
+							<input type="text" placeholder="30">
+						</div>
+					</li>
+					<li class="col-md-4">
+						<h3>Miles Per Gallon</h3>
+						<div class="values" id="mpg-val">
+							
+						</div>
+					</li>
+					<li class="col-md-4">
+						<h3>Gasoline Prices</h3>
+						<div class="values" id="prices-val">
+							
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 	
 
 </body>
